@@ -1,54 +1,8 @@
-<!DOCTYPE html>
-<html lang="eng">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,intial-scale=1.0">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-
-    <!-- Font Awesome CSS -->
-    <link rel="stylesheet" href="css/all.min.css">
-    
-
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
-
-    <!-- Student Testimonial Owl Slider CSS -->
-    <link rel="stylesheet" href="text/css" href="css/owl.min.css">
-    <link rel="stylesheet" href="text/css" href="css/owl.theme.min.css">
-    <link rel="stylesheet" href="text/css" href="css/testyslider.css">
-
-    <!-- Custome CSS -->
-    <link rel="stylesheet" href="css/style.css">
-
-    <title>iSchool</title>
-</head>
-
-<body>
-    <!-- Start Navigation -->
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark pl-5 fixed-top">
-        <a class="navbar-brand" href="index.php">iSchool</a>
-        <span class="navbar-text">Learn and Implement</span>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <ul class="navbar-nav custom-nav pl-5">
-                <li class="nav-item custom-nav-item"><a href="index.php" class="nav-link">Home</a></li>
-                <li class="nav-item custom-nav-item"><a href="#" class="nav-link">Courses</a></li>
-                <li class="nav-item custom-nav-item"><a href="#" class="nav-link">Payment</a></li>
-                <li class="nav-item custom-nav-item"><a href="#" class="nav-link">My Profile</a></li>
-                <li class="nav-item custom-nav-item"><a href="#" class="nav-link">Logout</a></li>
-                <li class="nav-item custom-nav-item"><a href="#" class="nav-link">Login</a></li>
-                <li class="nav-item custom-nav-item"><a href="#" class="nav-link">Signup</a></li>
-                <li class="nav-item custom-nav-item"><a href="#" class="nav-link">Feedback</a></li>
-                <li class="nav-item custom-nav-item"><a href="#" class="nav-link">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-    <!-- End Navigation -->
+      <!-- Start Including Header -->
+      <?php
+        include('./maininclude/header.php');
+      ?>
+      <!-- End Including Header -->
 
     <!-- Start Video Background -->
     <div class="container-fluid remove-vid-marg">
@@ -62,7 +16,7 @@
             <h1 class="my-content">Welcome to iSchool</h1>
             <small class="my-content">Learn and Implement</small>
             <br />
-            <a href="#" class="btn btn-danger">Get Started</a>
+            <a href="#" class="btn btn-danger" data-toggle="modal" data-target="#stuRegModalCenter">Get Started</a>
         </div>
     </div>
     <!-- End Video Background -->
@@ -199,32 +153,10 @@
     <!-- End Most Popular Course -->
 
     <!-- Start Contact Us -->
-    <div class="container mt-4" id="Contact">
-        <!-- Start Contact Us Container-->
-        <h2 class="text-center mb-4">Contact Us</h2> <!-- Contact Us Heading-->
-        <div class="row">
-            <!-- Start Contact Us Row -->
-            <div class="col-md-8">
-                <!-- Start Contact Us 1st Column -->
-                <form action="" method="post">
-                    <input type="text" class="form-control" name="name" placeholder="Name"><br>
-                    <input type="text" class="form-control" name="subject" placeholder="Subject"><br>
-                    <input type="text" class="form-control" name="email" placeholder="E-mail"><br>
-                    <textarea class="form-control" name="message" placeholder="How can we help you?"
-                        style="height: 150px;"></textarea><br>
-                    <input type="submit" class="btn btn-primary" value="send" name="submit"><br><br>
-                </form>
-            </div><!-- End Contact Us 1st Column -->
-
-            <div class="col-md-4 strip text-center" >
-                <!-- Start Contact Us 1st Column -->
-                <h4>iSchool</h4>
-                <p>iSchool, Dhaka, 1205<br />
-                    phone: +8801752003057<br /></p>
-            </div>
-        </div>
-        <!-- Start Contact Us Container-->
-    </div>
+        <!-- contact.html -->
+        <?php
+        include('./contact.php');
+        ?>
     <!-- End Contact Us -->
 
     <!-- Start Students Testimonial -->
@@ -291,21 +223,12 @@
           </div>
         </div>
       </div> <!-- End About Section -->
-      
-    <!-- Jquery and Bootstrap JavaScript-->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
 
-    <!-- Font Awesome JavaScript -->
-    <script src="js/all.min.js"></script>
-
-    <!-- Student Testimonial Owl Slider JS -->
-    <script type="text/javascript" src="js/owl.min.js"></script>
-    <script type="text/javascript" src="js/testyslider.js"></script>
-</body>
-
-</html>
+      <!-- Start Including Footer -->
+      <?php
+        include('./maininclude/footer.php');
+      ?>
+      <!-- End Including Footer -->
 
 <!-- style="background-image: linear-gradient(240deg, #ed213a, #93291e); padding: 3rem;
             height: 13rem;
